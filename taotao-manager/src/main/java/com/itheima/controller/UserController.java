@@ -15,7 +15,7 @@ public class UserController {
 
     //它只能在当前项目的Spring容器中寻找UserService这个接口的实现类，注入进来
     //@Autowired
-    @Reference
+    //@Reference
     private UserService userService;
 
     @RequestMapping("save")

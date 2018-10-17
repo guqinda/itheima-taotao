@@ -29,4 +29,5 @@ dependencies {
 
     //添加interface的依赖
     compile project(':taotao-interface')
+    compile project(':taotao-mapper')
 }
