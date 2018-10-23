@@ -9,10 +9,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/taotao-common" />
             <option value="$PROJECT_DIR$/taotao-interface" />
             <option value="$PROJECT_DIR$/taotao-manager" />
             <option value="$PROJECT_DIR$/taotao-mapper" />
             <option value="$PROJECT_DIR$/taotao-pojo" />
+            <option value="$PROJECT_DIR$/taotao-portal" />
             <option value="$PROJECT_DIR$/taotao-service" />
             <option value="$PROJECT_DIR$/taotao=interface" />
           </set>

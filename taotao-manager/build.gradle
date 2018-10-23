@@ -31,7 +31,13 @@ dependencies {
     //添加service的依赖 不能这么依赖service了，因为它会独立的部署
    // compile project(':taotao-service')
 
+    //String工具包
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+
+
     //添加interface的依赖
     compile project(':taotao-interface')
+    compile project(':taotao-common')
 
 }

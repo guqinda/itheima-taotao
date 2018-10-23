@@ -45,5 +45,10 @@ public class PageController {
         return pageName;
     }
 
+    @RequestMapping("/")
+    public String index(){
+
+        return "index";
+    }
 
 }
