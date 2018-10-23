@@ -9,5 +9,7 @@ import com.itheima.pojo.Item;
 public interface ItemSercive {
     int addItem(Item item,String desc);
 
+    //查询商品信息分页
     PageInfo<Item> list(int page , int rows);
+
 }
