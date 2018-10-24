@@ -17,6 +17,8 @@
       <module name="taotao-pojo_test" target="1.8" />
       <module name="taotao-portal_main" target="1.8" />
       <module name="taotao-portal_test" target="1.8" />
+      <module name="taotao-protal_main" target="1.8" />
+      <module name="taotao-protal_test" target="1.8" />
       <module name="taotao-service_main" target="1.8" />
       <module name="taotao-service_test" target="1.8" />
       <module name="taotao=interface_main" target="1.8" />

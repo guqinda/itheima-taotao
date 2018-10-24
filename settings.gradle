@@ -7,4 +7,5 @@ include 'taotao=interface'
 include 'taotao-interface'
 include 'taotao-common'
 include 'taotao-portal'
+include 'taotao-protal'
 
