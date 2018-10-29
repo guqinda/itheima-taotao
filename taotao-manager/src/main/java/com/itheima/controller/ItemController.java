@@ -46,7 +46,7 @@ public class ItemController {
 
         //easyui的数据表格显示数据，要求有固定格式，json里面total属性和rows属性
         //total属性表示总共有多少条记录
-        //rows属性表示挡墙这一页的集合数据，也就是list集合
+        //rows属性表示当前这一页的集合数据，也就是list集合
 
         Map<String ,Object> map=new HashMap<>();
         map.put("total",pageInfo.getTotal());

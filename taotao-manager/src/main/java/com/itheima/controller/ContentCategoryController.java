@@ -28,4 +28,29 @@ public class ContentCategoryController {
         return list;
 
     }
+
+    @RequestMapping("rest/content/category/add")
+    @ResponseBody
+    public ContentCategory add(ContentCategory contentCategory){
+
+        contentCategory= contentCategoryService.add(contentCategory);
+        return contentCategory;
+    }
+
+    @RequestMapping("rest/content/category/update")
+    @ResponseBody
+    public String  update(ContentCategory contentCategory){// id  name
+        contentCategoryService.update(contentCategory);
+        return "success";
+    }
+
+    @RequestMapping("rest/content/category/delete")
+    @ResponseBody
+    public String  delete(ContentCategory contentCategory){// id  name
+
+        int result = contentCategoryService.delete(contentCategory);
+        System.out.println("result：" + result);
+        return "success";
+    }
+
 }
