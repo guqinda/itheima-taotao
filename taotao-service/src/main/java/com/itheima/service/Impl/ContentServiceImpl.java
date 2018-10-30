@@ -49,4 +49,29 @@ public class ContentServiceImpl implements ContentService {
         content.setUpdated(new Date());
         return contentMapper.updateByPrimaryKeySelective(content);
     }
+
+    @Override
+    public int delete(String ids) {
+
+        //传多个id时用逗号分开
+        String[] idArray = ids.split(",");
+        int result=0;
+        //遍历分隔符id数组
+        for (String id:idArray){
+             result+=  contentMapper.deleteByPrimaryKey(Long.parseLong(id));
+        }
+        return result;
+    }
+
+    //查看大广告位
+    @Override
+    public List<Content> selectByCategoryId(long cid) {
+
+        Content content=new Content();
+        //给当前对象赋值分类id
+        content.setCategoryId(cid);
+
+        return    contentMapper.select(content);
+
+    }
 }
