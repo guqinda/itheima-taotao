@@ -21,6 +21,8 @@ public interface ContentService {
    int delete(String ids);
 
    //商城首页的大广告位查询
-    List<Content>  selectByCategoryId(long cid);
+   // List<Content>  selectByCategoryId(long cid);
+    //缓存的写法
+    String   selectByCategoryId(long cid);
 
 }
