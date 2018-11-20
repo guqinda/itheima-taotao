@@ -12,4 +12,10 @@ public interface ItemSercive {
     //查询商品信息分页
     PageInfo<Item> list(int page , int rows);
 
+    Item getItemById(long id);
+
+    int deleteItem(long id);
+
+    int updateItem(Item item);
+
 }

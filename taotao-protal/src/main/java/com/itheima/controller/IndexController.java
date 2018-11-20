@@ -7,6 +7,7 @@ import com.itheima.service.ContentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
@@ -22,6 +23,12 @@ public class IndexController {
 
    @Reference
     private ContentService contentService;
+
+   @RequestMapping("/page/{pageName}")
+    public  String  page(@PathVariable String pageName){
+
+       return pageName;
+    }
 
     @RequestMapping("/")
     public  String  index(Model model){

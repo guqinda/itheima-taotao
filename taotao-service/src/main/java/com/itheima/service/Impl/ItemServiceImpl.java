@@ -52,6 +52,23 @@ public class ItemServiceImpl implements ItemSercive {
         return result;
     }
 
+    //查询单个商品的信息
+    @Override
+    public Item getItemById(long id) {
+        return itemMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public int deleteItem(long id) {
+        return itemMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
+    public int updateItem(Item item) {
+
+        return itemMapper.updateByPrimaryKeySelective(item);
+    }
+
     @Override
     public PageInfo<Item> list(int page, int rows) {
 
@@ -62,5 +79,7 @@ public class ItemServiceImpl implements ItemSercive {
 
         return new PageInfo<Item>(list);
     }
+
+
 
 }
