@@ -13,4 +13,11 @@ public interface UserService {
 
   //执行注册功能
   int register(User user);
+
+  //登录功能
+  String  login(User user);
+
+  //登录成功显示用户名
+  User findUser (String ticket);
+
 }

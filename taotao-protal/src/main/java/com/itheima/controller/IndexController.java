@@ -3,13 +3,18 @@ package com.itheima.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.google.gson.Gson;
 import com.itheima.pojo.Content;
+import com.itheima.pojo.User;
 import com.itheima.service.ContentService;
+import com.itheima.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -24,6 +29,9 @@ public class IndexController {
    @Reference
     private ContentService contentService;
 
+   @Reference
+   private UserService userService;
+
    @RequestMapping("/page/{pageName}")
     public  String  page(@PathVariable String pageName){
 
@@ -31,7 +39,26 @@ public class IndexController {
     }
 
     @RequestMapping("/")
-    public  String  index(Model model){
+    public  String  index(Model model, HttpServletRequest request){
+
+        //登录成功后，首页要显示用户名
+        //获取ticket
+        Cookie[] cookies=request.getCookies();
+        if(cookies !=null){
+
+            for (Cookie cookie:cookies){
+                String name =cookie.getName();
+                if("ticket".equals(name)){
+                    //得到了ticket
+                    String value = cookie.getValue();
+                    User user = userService.findUser(value);
+                    model.addAttribute("user",user);
+                    break;
+                }
+            }
+
+        }
+
 
         //要把大广告位的6张图片给查询出来,按分类id查，所以把大广告id赋值进来
         int categoryId=89;
