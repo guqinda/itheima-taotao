@@ -6,6 +6,8 @@
       <module name="taotao-common_test" target="1.8" />
       <module name="taotao-interface_main" target="1.8" />
       <module name="taotao-interface_test" target="1.8" />
+      <module name="taotao-item-web_main" target="1.8" />
+      <module name="taotao-item-web_test" target="1.8" />
       <module name="taotao-manager_main" target="1.8" />
       <module name="taotao-manager_test" target="1.8" />
       <module name="taotao-mapper_main" target="1.8" />
@@ -19,6 +21,12 @@
       <module name="taotao-portal_test" target="1.8" />
       <module name="taotao-protal_main" target="1.8" />
       <module name="taotao-protal_test" target="1.8" />
+      <module name="taotao-search-interface_main" target="1.8" />
+      <module name="taotao-search-interface_test" target="1.8" />
+      <module name="taotao-search-service_main" target="1.8" />
+      <module name="taotao-search-service_test" target="1.8" />
+      <module name="taotao-search-web_main" target="1.8" />
+      <module name="taotao-search-web_test" target="1.8" />
       <module name="taotao-service_main" target="1.8" />
       <module name="taotao-service_test" target="1.8" />
       <module name="taotao-sso-interface_main" target="1.8" />

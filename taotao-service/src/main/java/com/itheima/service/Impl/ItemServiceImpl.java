@@ -9,6 +9,7 @@ import com.itheima.pojo.Item;
 import com.itheima.pojo.ItemDesc;
 import com.itheima.service.ItemSercive;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsMessagingTemplate;
 
 import java.util.Date;
 import java.util.List;
@@ -25,6 +26,9 @@ public class ItemServiceImpl implements ItemSercive {
     @Autowired
     private ItemDescMapper itemDescMapper;
 
+    @Autowired
+    private JmsMessagingTemplate template;
+
     @Override
     public int addItem(Item item, String desc) {
         //添加Item表
@@ -33,9 +37,10 @@ public class ItemServiceImpl implements ItemSercive {
 
         //从页面传过来的item还不完整
         //ID是自己控制的，不是自增的，用当前时间+随机数生成
-        long id = System.currentTimeMillis()+(long)(Math.random()*100000);
+        Long id = System.currentTimeMillis()+(long)(Math.random()*100000);
 
         item.setStatus(1);
+        item.setId(id);
         item.setCreated(new Date());
         item.setUpdated(new Date());
 
@@ -48,6 +53,9 @@ public class ItemServiceImpl implements ItemSercive {
         itemDesc.setCreated(new Date());
         itemDesc.setUpdated(new Date());
         itemDescMapper.insertSelective(itemDesc);
+
+        //添加完商品，需要发送出来消息，然后让搜索系统去更新索引库  MQ
+        template.convertAndSend("item-save",id);
 
         return result;
     }

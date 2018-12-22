@@ -11,4 +11,8 @@ include 'taotao-protal'
 include 'taotao-sso-service'
 include 'taotao-sso-web'
 include 'taotao-sso-interface'
+include 'taotao-search-web'
+include 'taotao-search-service'
+include 'taotao-search-interface'
+include 'taotao-item-web'
 

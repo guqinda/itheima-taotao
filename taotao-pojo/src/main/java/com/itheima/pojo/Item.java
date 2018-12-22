@@ -28,7 +28,7 @@ import javax.persistence.Table;
 @Table(name = "TB_ITEM")
 public class Item implements java.io.Serializable {
     /** 版本号 */
-    private static final long serialVersionUID = 5745309751649626943L;
+   // private static final long serialVersionUID = 5745309751649626943L;
 
     /** 商品id，同时也是商品编号 */
     @Id
@@ -282,5 +282,22 @@ public class Item implements java.io.Serializable {
      */
     public void setUpdated(Date updated) {
         this.updated = updated;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", sellPoint='" + sellPoint + '\'' +
+                ", price=" + price +
+                ", num=" + num +
+                ", barcode='" + barcode + '\'' +
+                ", image='" + image + '\'' +
+                ", cid=" + cid +
+                ", status=" + status +
+                ", created=" + created +
+                ", updated=" + updated +
+                '}';
     }
 }

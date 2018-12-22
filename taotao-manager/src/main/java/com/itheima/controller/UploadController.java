@@ -58,7 +58,7 @@ public class UploadController {
         map.put("error", 0);          //group1
         //map.put("url", "http://192.168.227.131/"+uploadinfos[0]+"/"+uploadinfos[1]);
         //防止别人知道ip地址在哪
-        map.put("url", "http://image.gqd.com/"+uploadinfos[0]+"/"+uploadinfos[1]);
+        map.put("url", "http://image2.gqd.com/"+uploadinfos[0]+"/"+uploadinfos[1]);
         map.put("height", 100);
         map.put("width", 100);
 
