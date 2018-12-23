@@ -15,4 +15,5 @@ include 'taotao-search-web'
 include 'taotao-search-service'
 include 'taotao-search-interface'
 include 'taotao-item-web'
+include 'taotao-item-web'
 

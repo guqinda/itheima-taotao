@@ -30,6 +30,11 @@ public class Item implements java.io.Serializable {
     /** 版本号 */
    // private static final long serialVersionUID = 5745309751649626943L;
 
+    //存储商品详情页的图片的时候，需要把地址分割下
+    public String[] getImages(){
+        return image.split(",");
+    }
+
     /** 商品id，同时也是商品编号 */
     @Id
     @Column(name = "ID", unique = true, nullable = false, length = 19)

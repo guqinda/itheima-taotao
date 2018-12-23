@@ -48,7 +48,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-sso-web.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-sso-web.iml" group="taotao-sso-web" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-sso-web/taotao-sso-web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-sso-web/taotao-sso-web_main.iml" group="taotao-sso-web" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-sso-web/taotao-sso-web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-sso-web/taotao-sso-web_test.iml" group="taotao-sso-web" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao=interface/taotao=interface.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao=interface/taotao=interface.iml" group="taotao=interface" />
     </modules>
   </component>
 </project>
