@@ -9,7 +9,6 @@ import freemarker.template.Configuration;
 import freemarker.template.Template;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.FileWriter;
