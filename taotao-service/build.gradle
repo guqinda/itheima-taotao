@@ -27,7 +27,8 @@ dependencies {
 //dubbo 消息中间件
     compile group: 'io.dubbo.springboot',name: 'spring-boot-starter-dubbo',version:'1.0.0'
 
-// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis
+    //redis
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-redis', version: '1.5.10.RELEASE'
 
     //Gson插件

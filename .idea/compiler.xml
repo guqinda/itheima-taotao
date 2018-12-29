@@ -2,6 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="taotao-card-interface_main" target="1.8" />
+      <module name="taotao-card-interface_test" target="1.8" />
+      <module name="taotao-card-service_main" target="1.8" />
+      <module name="taotao-card-service_test" target="1.8" />
       <module name="taotao-common_main" target="1.8" />
       <module name="taotao-common_test" target="1.8" />
       <module name="taotao-interface_main" target="1.8" />

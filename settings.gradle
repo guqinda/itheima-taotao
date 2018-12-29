@@ -16,4 +16,6 @@ include 'taotao-search-service'
 include 'taotao-search-interface'
 include 'taotao-item-web'
 include 'taotao-item-web'
+include 'taotao-card-service'
+include 'taotao-card-interface'
 

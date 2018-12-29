@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-card-interface/taotao-card-interface.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-card-interface/taotao-card-interface.iml" group="taotao-card-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-card-interface/taotao-card-interface_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-card-interface/taotao-card-interface_main.iml" group="taotao-card-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-card-interface/taotao-card-interface_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-card-interface/taotao-card-interface_test.iml" group="taotao-card-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-card-service.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-card-service.iml" group="taotao-card-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-card-service/taotao-card-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-card-service/taotao-card-service_main.iml" group="taotao-card-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-card-service/taotao-card-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-card-service/taotao-card-service_test.iml" group="taotao-card-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common.iml" group="taotao-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_main.iml" group="taotao-common" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-common/taotao-common_test.iml" group="taotao-common" />

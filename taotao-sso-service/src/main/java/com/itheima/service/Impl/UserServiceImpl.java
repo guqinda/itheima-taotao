@@ -64,8 +64,8 @@ public class UserServiceImpl implements UserService {
         String key="gqd_"+ticket;
 
         //这里要从redis里面获取用户的信息
-        redisTemplate.opsForValue().get(key);
-        return null;
+        return  redisTemplate.opsForValue().get(key);
+
     }
 
     @Override
@@ -94,7 +94,7 @@ public class UserServiceImpl implements UserService {
         if(user !=null) {
             String json = new Gson().toJson(user);
             //这个key要唯一的，存进redis中才不会重复
-           key = "iit_" + UUID.randomUUID();
+           key = "gqd_" + UUID.randomUUID();
             //把用户数据保存到redis中
             redisTemplate.opsForValue().set(key, json);
         }
