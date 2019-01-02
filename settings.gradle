@@ -18,4 +18,6 @@ include 'taotao-item-web'
 include 'taotao-item-web'
 include 'taotao-card-service'
 include 'taotao-card-interface'
+include 'taotao-order-interface'
+include 'taotao-order-service'
 

@@ -17,6 +17,7 @@ public class RedisUtil {
       //  System.out.println("redis里面获取了用户的信息Json===" + json);
         User user = null;
 
+        //user不为空才new出来
         if(!StringUtils.isEmpty(json)){
             user= new Gson().fromJson( json ,User.class);
         }

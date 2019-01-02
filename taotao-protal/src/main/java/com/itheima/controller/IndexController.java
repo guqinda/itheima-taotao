@@ -6,6 +6,7 @@ import com.itheima.pojo.Content;
 import com.itheima.pojo.User;
 import com.itheima.service.ContentService;
 import com.itheima.service.UserService;
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -32,9 +33,18 @@ public class IndexController {
    @Reference
    private UserService userService;
 
+    /**
+     * 通用跳转模板
+     * @param pageName
+     * @return
+     */
    @RequestMapping("/page/{pageName}")
-    public  String  page(@PathVariable String pageName){
+    public  String  page(@PathVariable String pageName, String redirect, Model model){
 
+       //把跳转的参数存储到model里面去
+       model.addAttribute("redirect",redirect);
+
+       System.out.println("pageName==" + pageName);
        return pageName;
     }
 

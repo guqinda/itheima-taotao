@@ -16,6 +16,10 @@
       <module name="taotao-manager_test" target="1.8" />
       <module name="taotao-mapper_main" target="1.8" />
       <module name="taotao-mapper_test" target="1.8" />
+      <module name="taotao-order-interface_main" target="1.8" />
+      <module name="taotao-order-interface_test" target="1.8" />
+      <module name="taotao-order-service_main" target="1.8" />
+      <module name="taotao-order-service_test" target="1.8" />
       <module name="taotao-parent-taotao-portal_main" target="1.8" />
       <module name="taotao-parent_main" target="1.8" />
       <module name="taotao-parent_test" target="1.8" />

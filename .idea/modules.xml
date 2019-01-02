@@ -23,6 +23,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-mapper.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-mapper.iml" group="taotao-mapper" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper_main.iml" group="taotao-mapper" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-mapper/taotao-mapper_test.iml" group="taotao-mapper" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-interface.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-interface.iml" group="taotao-order-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-interface/taotao-order-interface_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-interface/taotao-order-interface_main.iml" group="taotao-order-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-interface/taotao-order-interface_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-interface/taotao-order-interface_test.iml" group="taotao-order-interface" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service.iml" group="taotao-order-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service_main.iml" group="taotao-order-service" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-order-service/taotao-order-service_test.iml" group="taotao-order-service" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-parent.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-parent_main.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-parent_main.iml" group="taotao-parent" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/taotao-parent_test.iml" filepath="$PROJECT_DIR$/.idea/modules/taotao-parent_test.iml" group="taotao-parent" />
